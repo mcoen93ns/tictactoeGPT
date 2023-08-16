@@ -21,8 +21,8 @@
 ✅ **Place 'O' at (0,2)** -->
 [
 [null, null, 'O'],
-[null, 'X', null],
+[null, null, null],
 [null, null, null]
 ];
 
-**Place 'X' in an already occupied cell (1,1)** --> - **Expected Outcome**: Throw an error or return a message indicating that the cell is already occupied.
+✅ **Place 'X' in an already occupied cell (1,1)** --> - **Expected Outcome**: Throw an error indicating that the cell is already occupied.

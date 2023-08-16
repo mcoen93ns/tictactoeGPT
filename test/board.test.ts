@@ -30,5 +30,13 @@ describe("Board", () => {
         [null, null, null],
       ]);
     });
+    it("Should throw an error when placing 'X' in an already occupied cell (1,1)", () => {
+      const board = new Board();
+      board.placeMove(1, 1, "X");
+
+      expect(() => board.placeMove(1, 1, "X")).toThrow(
+        "Cell already occupied!"
+      );
+    });
   });
 });

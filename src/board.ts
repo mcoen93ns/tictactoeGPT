@@ -10,8 +10,9 @@ export class Board {
   }
 
   placeMove(row: number, col: number, symbol: "X" | "O"): void {
-    if (this.grid[row][col] === null) {
-      this.grid[row][col] = symbol;
+    if (this.grid[row][col] !== null) {
+      throw new Error("Cell already occupied!");
     }
+    this.grid[row][col] = symbol;
   }
 }
