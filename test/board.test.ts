@@ -11,4 +11,15 @@ describe("Board", () => {
       ]);
     });
   });
+  describe("Placing a move on the board", () => {
+    it("Should place 'X' at (1,1)", () => {
+      const board = new Board();
+      board.placeMove(1, 1, "X");
+      expect(board.grid).toEqual([
+        [null, null, null],
+        [null, "X", null],
+        [null, null, null],
+      ]);
+    });
+  });
 });
