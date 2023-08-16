@@ -21,5 +21,14 @@ describe("Board", () => {
         [null, null, null],
       ]);
     });
+    it("Should place 'O' at (0,2)", () => {
+      const board = new Board();
+      board.placeMove(0, 2, "O");
+      expect(board.grid).toEqual([
+        [null, null, "O"],
+        [null, null, null],
+        [null, null, null],
+      ]);
+    });
   });
 });

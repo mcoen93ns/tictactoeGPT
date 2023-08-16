@@ -18,7 +18,7 @@
 [null, null, null]
 ];
 
-🙌 **Place 'O' at (0,2)** -->
+✅ **Place 'O' at (0,2)** -->
 [
 [null, null, 'O'],
 [null, 'X', null],
